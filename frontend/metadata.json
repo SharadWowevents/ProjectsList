@@ -1,0 +1,6 @@
+{
+  "name": "Projects Directory Dashboard",
+  "description": "Comprehensive project management dashboard to track projects by type, live deployment status, launch dates, and direct links.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

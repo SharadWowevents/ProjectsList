@@ -124,7 +124,7 @@ export default function App() {
     const total = projects.length;
     let live = 0;
     let offline = 0;
-    let active = 0;
+    let Completed = 0;
     let inProgress = 0;
     let inactive = 0;
     const typeCounts: Record<string, number> = {};
@@ -133,7 +133,7 @@ export default function App() {
       if (p.isLive) live++;
       else offline++;
 
-      if (p.status === 'Active') active++;
+      if (p.status === 'Completed') Completed++;
       else if (p.status === 'In progress') inProgress++;
       else if (p.status === 'Inactive') inactive++;
 
@@ -142,7 +142,7 @@ export default function App() {
       }
     });
 
-    return { total, live, offline, active, inProgress, inactive, typeCounts };
+    return { total, live, offline, Completed, inProgress, inactive, typeCounts };
   }, [projects]);
 
   // Filter & Sort Projects

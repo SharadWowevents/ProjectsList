@@ -128,11 +128,11 @@ export function getTypeBadgeStyle(typeName: string) {
 // Status styles in High Density theme
 export function getStatusBadgeStyle(status: ProjectStatus) {
   switch (status) {
-    case 'Active':
+    case 'Completed':
       return {
         bg: 'bg-emerald-500/10 text-emerald-900 border-emerald-700/30',
         dot: 'bg-emerald-600',
-        label: 'Active',
+        label: 'Completed',
       };
     case 'In progress':
       return {

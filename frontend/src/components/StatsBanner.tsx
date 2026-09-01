@@ -13,7 +13,7 @@ interface StatsBannerProps {
   stats: ProjectStats;
   selectedType: string;
   onSelectType: (type: string) => void;
-  onSelectStatus: (status: 'Active' | 'In progress' | 'Inactive' | 'ALL') => void;
+  onSelectStatus: (status: 'Completed' | 'In progress' | 'Inactive' | 'ALL') => void;
   onSelectLive: (live: 'ALL' | 'LIVE' | 'OFFLINE') => void;
   isLoading?: boolean; // <-- Added to handle initial backend fetch delay
 }
@@ -133,7 +133,7 @@ export const StatsBanner: React.FC<StatsBannerProps> = ({
 
         {/* Card 4: Active Projects */}
         <div 
-          onClick={() => onSelectStatus('Active')}
+          onClick={() => onSelectStatus('Completed')}
           className="bg-white/90 rounded-xs p-3.5 sm:p-4 border border-[#141414]/20 hover:border-[#141414] transition-all cursor-pointer group shadow-2xs"
         >
           <div className="flex items-center justify-between">
@@ -149,7 +149,7 @@ export const StatsBanner: React.FC<StatsBannerProps> = ({
               <div className="h-8 w-12 bg-indigo-950/10 animate-pulse rounded-xs" />
             ) : (
               <span className="text-2xl sm:text-3xl font-serif font-medium text-indigo-950 tracking-tight">
-                {stats.active.toString().padStart(2, '0')}
+                {stats.Completed.toString().padStart(2, '0')}
               </span>
             )}
             {isLoading ? (

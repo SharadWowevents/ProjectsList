@@ -144,7 +144,7 @@ export const ProjectDetailDrawer: React.FC<ProjectDetailDrawerProps> = ({
               }`}
             >
               {isTogglingLive && <Loader2 className="w-3.5 h-3.5 animate-spin" />}
-              {project.isLive ? 'ACTIVE' : 'GO LIVE'}
+              {project.isLive ? 'Completed' : 'GO LIVE'}
             </button>
           </div>
 

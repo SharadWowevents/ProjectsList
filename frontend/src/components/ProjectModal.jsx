@@ -24,7 +24,7 @@ export const ProjectModal = ({
   const [link, setLink] = useState('');
   const [isLive, setIsLive] = useState(true);
   const [date, setDate] = useState(() => new Date().toISOString().slice(0, 10));
-  const [status, setStatus] = useState('Active');
+  const [status, setStatus] = useState('Completed');
   const [description, setDescription] = useState('');
   const [tagsInput, setTagsInput] = useState('');
   const [notes, setNotes] = useState('');
@@ -42,7 +42,7 @@ export const ProjectModal = ({
         setLink(projectToEdit.link || '');
         setIsLive(projectToEdit.isLive ?? true);
         setDate(projectToEdit.date || new Date().toISOString().slice(0, 10));
-        setStatus(projectToEdit.status || 'Active');
+        setStatus(projectToEdit.status || 'Completed');
         setDescription(projectToEdit.description || '');
         setTagsInput(projectToEdit.tags ? projectToEdit.tags.join(', ') : '');
         setNotes(projectToEdit.notes || '');
@@ -52,7 +52,7 @@ export const ProjectModal = ({
         setLink('');
         setIsLive(true);
         setDate(new Date().toISOString().slice(0, 10));
-        setStatus('Active');
+        setStatus('Completed');
         setDescription('');
         setTagsInput('');
         setNotes('');
@@ -376,7 +376,7 @@ export const ProjectModal = ({
               STATUS <span className="text-rose-600">*</span>
             </label>
             <div className="grid grid-cols-3 gap-2">
-              {['Active', 'In progress', 'Inactive'].map((st) => {
+              {['Completed', 'In progress', 'Inactive'].map((st) => {
                 const isSelected = status === st;
                 return (
                   <button

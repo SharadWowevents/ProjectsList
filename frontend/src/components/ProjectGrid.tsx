@@ -274,7 +274,7 @@ export const ProjectGrid: React.FC<ProjectGridProps> = ({
                       isChangingStatus ? 'pl-5' : 'pl-2'
                     } ${statusStyle.bg}`}
                   >
-                    <option value="Active" className="bg-white text-[#141414]">Active</option>
+                    <option value="Completed" className="bg-white text-[#141414]">Completed</option>
                     <option value="In progress" className="bg-white text-[#141414]">In progress</option>
                     <option value="Inactive" className="bg-white text-[#141414]">Inactive</option>
                   </select>

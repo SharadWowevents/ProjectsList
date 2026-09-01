@@ -32,7 +32,7 @@ import { ImportExportModal } from './components/ImportExportModal';
 import { DeleteConfirmModal } from './components/DeleteConfirmModal';
 
 // Set your backend URL here. In production, use environment variables (e.g., import.meta.env.VITE_API_URL)
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'http://localhost:5003/api';
 
 export default function App() {
   // State: Projects & Custom Types

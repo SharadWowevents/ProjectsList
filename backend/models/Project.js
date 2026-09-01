@@ -7,7 +7,7 @@ const projectSchema = new mongoose.Schema({
   link: { type: String, default: '' },
   isLive: { type: Boolean, default: false },
   date: { type: String, required: true }, // Format: YYYY-MM-DD
-  status: { type: String, enum: ['Active', 'Inactive', 'In progress'], required: true },
+  status: { type: String, enum: ['Completed', 'Inactive', 'In progress'], required: true },
   tags: { type: [String], default: [] },
   techStack: { type: [String], default: [] },
   githubUrl: { type: String, default: '' },

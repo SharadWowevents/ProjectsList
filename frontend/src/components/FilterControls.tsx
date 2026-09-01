@@ -173,7 +173,7 @@ export const FilterControls: React.FC<FilterControlsProps> = ({
             className="bg-white border border-[#141414]/25 hover:border-[#141414] rounded-xs px-2 py-1 font-mono text-xs text-[#141414] focus:ring-1 focus:ring-[#141414] outline-none cursor-pointer disabled:opacity-50"
           >
             <option value="ALL">ALL STATUSES</option>
-            <option value="Active">ACTIVE</option>
+            <option value="Completed">COMPLETED</option>
             <option value="In progress">IN PROGRESS</option>
             <option value="Inactive">INACTIVE</option>
           </select>
